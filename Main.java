@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args) {
-        int num=5,c=0,f=0;
+        int num=10,c=0,f=0;
         for(int i=1;i<num;i++)
         {
             if(num%i==0)
