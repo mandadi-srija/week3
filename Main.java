@@ -1,11 +1,19 @@
-class Main {
+public class Main{
     public static void main(String[] args) {
-        int num=4;
-        int ans=1;
-        for(int i=1;i<=num;i++)
+        int num=5,c=0,f=0;
+        for(int i=1;i<num;i++)
         {
-            ans=ans*i;
+            if(num%i==0)
+            c++;
+            if(c>2)
+            {
+                f=1;
+                break;
+            }
         }
-        System.out.println(ans);
+        if(f==1)
+        System.out.print("not prime");
+        else
+        System.out.print("prime");
     }
 }
